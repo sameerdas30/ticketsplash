@@ -43,15 +43,16 @@
     // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
     //
     function onDeviceReady() {
-    cordova.exec(null, null, "SplashScreen", "hide", []);
-	//navigator.splashscreen.hide();
+    //cordova.exec(null, null, "SplashScreen", "hide", []);
+	navigator.splashscreen.hide();
+alert('samir');
     }
 	</script>
   <script type="text/JavaScript">
 $( document ).ready(function() {
   return timedRedirect();
 });
-redirectTime = "5000";
+redirectTime = "10000";
 redirectURL = "home.html";
 function timedRedirect() {
 	$(".meter > span").each(function() {
@@ -60,7 +61,7 @@ function timedRedirect() {
 					.width(0)
 					.animate({
 						width: $(this).data("origWidth")
-					}, 5000);
+					}, 10000);
 			});
 	setTimeout("location.href = redirectURL;",redirectTime);
 }
