@@ -34,7 +34,6 @@
     <!--<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>-->
      <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	      <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-          <script type="text/javascript" charset="utf-8" src="splashscreen.js"></script>
           <script type="text/javascript" charset="utf-8">
 
     // Wait for PhoneGap to load
@@ -44,7 +43,10 @@
     // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
     //
     function onDeviceReady() {
-        cordova.exec(null, null, "SplashScreen", "hide", []);
+        setTimeout(function() {
+    navigator.splashscreen.hide();
+}, 1000);
+alert('samir');
     }
 	</script>
   <script type="text/JavaScript">
