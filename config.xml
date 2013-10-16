@@ -49,6 +49,7 @@
     <!-- Plugins can also be added here. -->
     
         <gap:plugin name="org.apache.cordova.core.splashscreen" />
+		<gap:plugin name="com.phonegap.plugins.hydration" version="1.2.1" />
        <!-- A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
 
