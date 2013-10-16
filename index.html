@@ -43,9 +43,8 @@
     // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
     //
     function onDeviceReady() {
-    //cordova.exec(null, null, "SplashScreen", "hide", []);
-	navigator.splashscreen.hide();
-alert('samir');
+    cordova.exec(null, null, "SplashScreen", "hide", []);
+	//navigator.splashscreen.hide();
     }
 	</script>
   <script type="text/JavaScript">
