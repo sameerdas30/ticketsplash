@@ -37,7 +37,7 @@
 
     // Wait for PhoneGap to load
     // 
-    document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("offline", onDeviceReady, false);
 
     // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
     //
@@ -119,21 +119,21 @@
 <!-- /header -->
   <div data-role="content">	
 <div class="fileicket_div">
-  <a href="parking.html"><div class="menu">
+  <a href="parking.html" data-transition="slide"><div class="menu">
   <div class="ticket_lefticn"><img src="images/parking_left_home_icon.png" /></div>
   <div class="ticket_center" ><h3>PARKING TICKET</h3>
     <p>File your parking tickets</p>
     </div>
     <div class="ticket_righticn" align="right"><img src="images/right_arrow.png" alt=""></div>
    </div></a>
-   <a href="traffic.html"><div class="menu">
+   <a href="traffic.html" data-transition="slide"><div class="menu">
   <div class="ticket_lefticn"><img src="images/trafic_left_icon.png" /></div>
   <div class="ticket_center" ><h3>TRAFFIC TICKET</h3>
     <p>File your traffic tickets</p>
     </div>
     <div class="ticket_righticn" align="right"><img src="images/right_arrow.png" width="180" height="180" alt=""></div>
    </div></a>
-   <a href="about.html"><div class="menu nobdr">
+   <a href="about.html" data-transition="slide"><div class="menu nobdr">
   <div class="ticket_lefticn"><img src="images/about_left_icon.png" /></div>
   <div class="ticket_center" ><h3>ABOUT</h3>
     <p>About TicketFiler</p>
